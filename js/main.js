@@ -29,7 +29,6 @@ app.controller('ProductsCtrl', ['Products', function(Products) {
       }
     }
 
-    console.log(data)
     self.data = data;
   })
 
