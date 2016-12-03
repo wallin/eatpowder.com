@@ -16,16 +16,17 @@
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body ng-app="ep">
+    <body ng-app="ep" ng-controller="ProductsCtrl as products">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
             <header class="row">
-                <div class="large-6 medium-6 columns">
+                <div class="large-5 medium-5 columns">
                     <h1 class="title">Comparison of powder food</h1>
                     <small>Nutrtional values are in gram per 100 gram.</small>
                 </div>
+                <div class="large-2 medium-2 columns">
                 <div class="large-2 medium-2 columns">
                     <label>Currency
                       <select ng-model="settings.currency">
@@ -51,7 +52,7 @@
             </header>
 
         <div class="row table-scroll">
-            <table class="stack" ng-controller="ProductsCtrl as products">
+            <table class="stack">
                 <thead>
                     <tr>
                         <th scope="col">&nbsp;</th>
@@ -65,12 +66,12 @@
                     </tr>
 
                     <tr>
-                        <th scope="row">Max price/port.</th>
-                        <td ng-repeat="value in products.data['price-max_price_per_port'] track by $index" class="text-right" currency="value"></td>
+                        <th scope="row">Price per day, max</th>
+                        <td ng-repeat="prod in products.raw" class="text-right" currency="products.pricePerDay(prod, 'price-max_price_per_port')"></td>
                     </tr>
                     <tr>
-                        <th scope="row">Min price/port.</th>
-                        <td ng-repeat="value in products.data['price-min_price_per_port'] track by $index" class="text-right" currency="value"></td>
+                        <th scope="row">Price per day, min</th>
+                        <td ng-repeat="prod in products.raw" class="text-right" currency="products.pricePerDay(prod, 'price-min_price_per_port')"></td>
                     </tr>
 
 

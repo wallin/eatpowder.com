@@ -23,17 +23,14 @@ app.run(['$http', '$rootScope', function($http, $rootScope) {
     fx.base = data.data.base
     $rootScope.$broadcast('fx.loaded');
   });
-}]);
 
-
-app.run(['$rootScope', function($rootScope) {
   $rootScope.settings = {
     currency: 'SEK',
     intake: '2000'
   }
 }]);
 
-app.controller('ProductsCtrl', ['Products', function(Products) {
+app.controller('ProductsCtrl', ['$scope', 'Products', function($scope, Products) {
   var self = this;
   self.data = {};
   self.raw = [];
@@ -57,6 +54,17 @@ app.controller('ProductsCtrl', ['Products', function(Products) {
 
     self.data = data;
   })
+
+  self.pricePerDay = function(prod, key) {
+    var price = prod[key];
+    var value = parseFloat(price.substr(1), 5);
+    var calories = parseInt(prod['product-kcal_per_port'], 10);
+    var calPerDay = parseInt($scope.settings.intake, 10)
+    var currency = price[0];
+    var newPrice = (calPerDay / calories) * value;
+
+    return [currency, newPrice].join('');
+  };
 
   self.rows = function(type) {
     var returned = {};
@@ -112,17 +120,18 @@ app.directive('currency', function() {
   return {
     restrict: 'A',
     link: function(scope, el, attrs) {
-      var orig = scope.$eval(attrs.currency);
-      if (!orig) {
-        return;
-      }
       var _update = function() {
+        var orig = scope.$eval(attrs.currency);
+        if (!orig) {
+          return;
+        }
         update(orig, scope.settings.currency, el);
       };
       scope.$on('fx.loaded', _update);
       scope.$watch('settings.currency', _update);
+      scope.$watch(attrs.currency, _update);
 
-      update(orig, el);
+      _update();
     }
   }
 })
