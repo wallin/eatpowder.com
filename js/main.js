@@ -5,7 +5,7 @@ if (!String.prototype.startsWith) {
   };
 }
 
-var app = angular.module('ep', []);
+var app = angular.module('ep', ['angularjs-dropdown-multiselect']);
 
 app.factory('Products', ['$http', function($http){
   var url   = "data/products.csv";
@@ -28,20 +28,30 @@ app.run(['$http', '$rootScope', function($http, $rootScope) {
     currency: 'SEK',
     intake: '2000'
   }
+
 }]);
 
 app.controller('ProductsCtrl', ['$scope', 'Products', function($scope, Products) {
   var self = this;
   self.data = {};
   self.raw = [];
+
+  self.selectedProducts = [{ id: 0 }, { id: 4 }, { id: 6 }, { id: 7 }, { id: 11 }, { id: 14 }, {id: 16}]
+  self.selectedData = [];
+  self.allRows = [];
+  self.selectedSettings = {
+    buttonClasses: 'btn btn-default btn-block'
+  }
   Products.then(function(d) {
     // Transpose rows
     data = {};
     self.names = [];
     self.raw = d.data;
 
+    self.selectedData = [];
     for(var i = 0; i < d.data.length; i++) {
       var row = d.data[i];
+      row.id = i // Add id based on index
       for(var key in row) {
         if (key === 'product-name') {
           self.names.push(row[key]);
@@ -50,10 +60,24 @@ app.controller('ProductsCtrl', ['$scope', 'Products', function($scope, Products)
           data[key].push(row[key])
         }
       }
+      self.selectedData.push({id: i, label: row['product-variant'], brand: row['product-name']})
+    }
+
+    for(var key in row) {
+      self.allRows.push(key);
     }
 
     self.data = data;
   })
+
+  self.filterSelect = function(value) {
+    for (var i = self.selectedProducts.length - 1; i >= 0; i--) {
+      if (self.selectedProducts[i].id == value.id) {
+        return true
+      }
+    }
+    return false;
+  }
 
   self.pricePerDay = function(prod, key) {
     var price = prod[key];
@@ -67,17 +91,29 @@ app.controller('ProductsCtrl', ['$scope', 'Products', function($scope, Products)
   };
 
   self.rows = function(type) {
-    var returned = {};
-    for (var key in self.data) {
-      if (key.startsWith(type)) {
-        returned[key] = self.data[key];
+    var returned = [];
+    for (var i = 0; i < self.allRows.length; i++) {
+      var row = self.allRows[i]
+      if (row.startsWith(type)) {
+        returned.push(row)
       }
     }
     return returned;
   }
 
-  self.propertyRows = [
-  ];
+  self.selected = function (col) {
+    var selected = [];
+    for (var i = self.raw.length - 1; i >= 0; i--) {
+      if (self.filterSelect(self.raw[i])) {
+        var val = self.raw[i];
+        if(col) {
+          val = self.raw[i][col]
+        }
+        selected.push(val)
+      }
+    }
+    return selected;
+  }
 
   self.divide = function(key) {
     shouldDivide = false;
@@ -95,6 +131,16 @@ app.controller('ProductsCtrl', ['$scope', 'Products', function($scope, Products)
     var parts = str.split('-');
     return parts.length - 2;
   };
+
+  self.propertyClass = function(val) {
+    if (val === 'Yes') {
+      return 'glyphicon-ok'
+    } else if(val === "No") {
+      return 'glyphicon-remove'
+    } else {
+      return ''
+    }
+  }
 }]);
 
 app.directive('currency', function() {

@@ -47,9 +47,57 @@ body {
     max-width: 100% !important;
 }
 
+.btn {
+  font-weight: 200;
+}
+
+.form-control {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+
+  box-shadow: none;
+  transition: none;
+}
+select, button.btn.btn-default {
+    width: 100%;
+    height: 2.4375rem;
+    padding: .5rem;
+    border: 1px solid #cacaca;
+    margin: 0 0 0;
+    font-size: 1rem;
+    font-family: inherit;
+    line-height: normal;
+    color: #0a0a0a;
+    background-color: #fefefe;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+    background-size: 9px 6px;
+    background-position: right -1rem center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    padding-right: 1.5rem;
+}
+
+
 table thead, table tbody {
     background: transparent;
     border: none;
+}
+
+.table>thead>tr>th {
+    border-bottom: 2px solid #000;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-top: none;
 }
 
 table th[scope=row] {
@@ -74,6 +122,7 @@ table tbody tr.divider td {
 
 table tbody td {
     min-width: 150px;
+    max-width: 150px;
     text-overflow: ellipsis;
     max-width:  150px;
     overflow: hidden;
@@ -84,16 +133,24 @@ table tbody td, table tbody th {
     padding: .2rem .625rem .2rem;
 }
 
-table th.indent-1 {
+table.table-condensed th.indent-1 {
     padding-left: 30px;
 }
 
-table th.indent-2 {
+table.table-condensed th.indent-2 {
     padding-left: 60px;
 }
 
 table tbody tr:nth-child(even) {
     background-color: #fff;
+}
+
+.glyphicon-ok {
+  color: #27ae60;
+}
+
+.glyphicon-remove {
+  color: #c0392b;
 }
 
 /* ==========================================================================
