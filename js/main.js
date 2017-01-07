@@ -18,7 +18,7 @@ fx.rates = {"base":"EUR","date":"2016-11-25","rates":{"AUD":1.423,"BGN":1.9558,"
 fx.base = 'EUR';
 
 app.run(['$http', '$rootScope', function($http, $rootScope) {
-  $http.get("http://api.fixer.io/latest").then(function(data) {
+  $http.get("https://api.fixer.io/latest").then(function(data) {
     fx.rates = data.data.rates
     fx.base = data.data.base
     $rootScope.$broadcast('fx.loaded');
