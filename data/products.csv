@@ -1,22 +1,23 @@
-product-name,product-variant,product-flavor,price-max_price_per_port,price-min_price_per_port,product-kcal_per_port,product-gram_per_port,price_per_day,nutr-kcal,nutr-fat,nutr-fat-saturated,nutr-fat-mono_unsaturated,nutr-fat-polyunsaturated,nutr-fat-polyunsaturated-omega_3,nutr-fat-polyunsaturated-omega_6,nutr-fat-trans_fat,nutr-carbohydrate,nutr-carbohydrate-sugars,nutr-fiber,nutr-protein,nutr-salt,prop-gmo_free,prop-organic,prop-gluten_free,prop-lactose_free,prop-vegan,protein_source,company,country,international_shipping
-Huel,2.1,Vanilla,£1.61,£1.33,500,125,£6.44,400,13.1,2.4,2.6,7.6,2.9,3.3,0,37.4,0.9,7,29.7,0.7,Yes,No,No,Yes,Yes,"Pea,Rice",Huel,UK,Yes
-Huel,2.1,Unflavored,£1.61,£1.33,500,125,£6.44,409,13.4,2.5,2.7,7.7,2.9,3.4,0,38.1,0.9,7.1,30.3,0.7,Yes,No,No,Yes,Yes,"Pea,Rice",Huel,UK,Yes
-Huel,Gluten Free 2.1,Vanilla,£1.79,£1.48,500,125,£7.16,400,13.1,2.4,2.6,7.6,2.9,3.3,0,37.4,0.9,7,29.7,0.7,Yes,No,Yes,Yes,Yes,"Pea,Rice",Huel,UK,Yes
-Huel,Bar v1.0,Cocoa,£2.40,£1.55,250,69,£19.20,360,8.7,3.5,3.1,1.6,,,,37.6,11.4,21.8,22.6,0.3,,,No,Yes,Yes,,,,
-Joylent,Standard,"Strawberry,Banana,Chocolate,Vanilla,Mango",€2.00,€1.67,704,173,€5.68,407,10,1.5,2.8,5.2,,,,51,6,6,26,0.3,Yes,No,No,No,No,"Soy,Whey",Joylent,Netherlands,Yes
-Joylent,Vegan,"Strawberry,Banana,Chocolate,Vanilla ",€2.00,€1.67,700,176,€5.71,405,9,1.5,2.5,5.2,,,,50,6,8,26,0.3,Yes,No,No,Yes,Yes,"Soy,Rice,Hemp",Joylent,Netherlands,Yes
-Mana,Mark 3,,€1.42,€1.31,400,85,€7.10,465,23,2.4,13.8,6.2,1.7,,,41.6,10.6,5,23.5,1.2,Yes,No,No,Yes,Yes,Soy,Mana,Czech,Yes
-Soylent,1.7,,$1.83,$1.54,400,85,$9.15,470,23.5,2.4,16.5,4.1,,,0,43.5,17.6,5.9,23.5,0.37,No,No,No,Yes,Yes,Soy,Rosa Labs,US,No
-Soylent,1.6,,$2.29,$1.93,500,106,$9.16,472,23.6,2.3,16,4.2,,,0,44.2,17.9,6.6,23.5,0.35,No,No,No,Yes,Yes,Soy,Rosa Labs,US,No
-Soylent,1.5,,$2.29,$1.93,500,115,$9.16,435,20,2.2,,,,,0,49.6,13,2.6,17.4,0.35,No,No,No,Yes,Yes,"Soy,Rice",Rosa Labs,US,No
-Soylent,Drink,,$2.83,$2.70,400,400ml,$14.15,400,21,2,2.5,16,,,0,37,9,3,20,0.3,No,No,No,Yes,Yes,Soy,Rosa Labs,US,No
-Soylent,Coffiest,"Coffee,Chocolate",$3.25,$3.09,400,400ml,$16.25,400,21,2,2.5,16,,,0,37,9,3,20,0.3,No,No,No,Yes,Yes,Soy,Rosa Labs,US,No
-Jake,Original,Vanilla,€3.20,€2.49,667,160,€9.60,417,14,1.8,2.9,6.7,1,4.9,,43.8,5,6.2,25,1.1,,No,No,Yes,Yes,Pea,Jake Nutritionals B.V.,Netherlands,Yes
-Jake,Light,Vanilla,€2.78,€2.11,500,113,€11.12,442,19.6,2.6,4.9,11.2,1,8.8,,27.6,5,6.2,35.4,1.8,,No,No,Yes,Yes,Pea,Jake Nutritionals B.V.,Netherlands,Yes
-Nano,Original v2,,€3.00,€1.33,666,150,€9.01,444,15.5,3.1,2.7,7.7,0.9,4.3,,59.1,1.6,7.3,18,1,,,,,Yes,Pea,Nano,Netherlands,Yes
-Bertrand,Vegan 2.1,,€4.89,€2.89,706,168,€13.85,420,20.6,2.6,9.3,7.9,2.2,5.2,,49.4,6.2,5.6,12.3,0.5,Yes,Yes,Yes,Yes,Yes,"Oat,Rice",Bertrand Food UG,Germany,Yes
-Bertrand,Classic 2.5,,€4.89,€2.89,740,168,€13.22,440,21.4,2,8.3,7.3,2,4.8,,50,6,5.35,11.9,0.5,Yes,Yes,Yes,No,No,"Oat,Milk",Bertrand Food UG,Germany,Yes
-Bertrand,Active,,€5.38,€3.21,833,168,€12.92,500,20.8,2.2,7.6,7.2,1.8,4.6,,53,6.2,5.8,25,0.6,Yes,Yes,Yes,No,No,"Oat,Milk",Bertrand Food UG,Germany,Yes
-Queal,Standard,,€2.33,€1.95,699,178,€6.67,394,10.4,2.9,3.8,3.5,,,,44.3,4.7,8.1,27.7,,Yes,No,No,No,No,"Soy,Whey",Queal,Netherlands,Yes
-Nutberg,Standard,Natural,€5.00,€2.45,501,110,€19.96,456,22.7,6.5,,,1.1,5.1,,39.1,4.1,8,26.1,0.03,Yes,No,Yes,Yes,Yes,"Rice,Pea,Hemp",Nutberg,Czech,Yes
-Ambronite,v5,Natural,€11.00,€7.57,500,118,€44.00,424,16.1,2.5,7.6,5.9,,,0,43.2,12.7,8.5,25.4,0.36,Yes,No,No,Yes,Yes,Oat,Ambronite,Finland,Yes
+product-name,product-variant,product-flavor,price-max_price_per_port,price-min_price_per_port,product-kcal_per_port,product-gram_per_port,price_per_day,nutr-kcal,nutr-fat,nutr-fat-saturated,nutr-fat-mono_unsaturated,nutr-fat-polyunsaturated,nutr-fat-polyunsaturated-omega_3,nutr-fat-polyunsaturated-omega_6,nutr-fat-trans_fat,nutr-carbohydrate,nutr-carbohydrate-sugars,nutr-fiber,nutr-protein,nutr-salt,prop-gmo_free,prop-organic,prop-gluten_free,prop-lactose_free,prop-vegan,protein_source,carb_source,company,country,international_shipping
+Huel,2.1,Vanilla,£1.61,£1.33,500,125,£6.44,400,13.1,2.4,2.6,7.6,2.9,3.3,0,37.4,0.9,7,29.7,0.7,Yes,No,No,Yes,Yes,"Pea,Rice",Oat,Huel,UK,Yes
+Huel,2.1,Unflavored,£1.61,£1.33,500,125,£6.44,409,13.4,2.5,2.7,7.7,2.9,3.4,0,38.1,0.9,7.1,30.3,0.7,Yes,No,No,Yes,Yes,"Pea,Rice",Oat,Huel,UK,Yes
+Huel,Gluten Free 2.1,Vanilla,£1.79,£1.48,500,125,£7.16,400,13.1,2.4,2.6,7.6,2.9,3.3,0,37.4,0.9,7,29.7,0.7,Yes,No,Yes,Yes,Yes,"Pea,Rice",Oat,Huel,UK,Yes
+Huel,Bar v1.0,Cocoa,£2.40,£1.55,250,69,£19.20,360,8.7,3.5,3.1,1.6,,,,37.6,11.4,21.8,22.6,0.3,,,No,Yes,Yes,"Pea,Rice",Oat,Huel,UK,Yes
+Joylent,Standard,"Strawberry,Banana,Chocolate,Vanilla,Mango",€2.00,€1.67,704,173,€5.68,407,10,1.5,2.8,5.2,,,,51,6,6,26,0.3,Yes,No,No,No,No,"Soy,Whey",,Joylent,Netherlands,Yes
+Joylent,Vegan,"Strawberry,Banana,Chocolate,Vanilla ",€2.00,€1.67,700,176,€5.71,405,9,1.5,2.5,5.2,,,,50,6,8,26,0.3,Yes,No,No,Yes,Yes,"Soy,Rice,Hemp",,Joylent,Netherlands,Yes
+Mana,Mark 3,,€1.42,€1.31,400,85,€7.10,465,23,2.4,13.8,6.2,1.7,,,41.6,10.6,5,23.5,1.2,Yes,No,No,Yes,Yes,Soy,,Mana,Czech,Yes
+Soylent,1.7,,$1.83,$1.54,400,85,$9.15,470,23.5,2.4,16.5,4.1,,,0,43.5,17.6,5.9,23.5,0.37,No,No,No,Yes,Yes,Soy,,Rosa Labs,US,No
+Soylent,1.6,,$2.29,$1.93,500,106,$9.16,472,23.6,2.3,16,4.2,,,0,44.2,17.9,6.6,23.5,0.35,No,No,No,Yes,Yes,Soy,,Rosa Labs,US,No
+Soylent,1.5,,$2.29,$1.93,500,115,$9.16,435,20,2.2,,,,,0,49.6,13,2.6,17.4,0.35,No,No,No,Yes,Yes,"Soy,Rice",,Rosa Labs,US,No
+Soylent,Drink,,$2.83,$2.70,400,400ml,$14.15,400,21,2,2.5,16,,,0,37,9,3,20,0.3,No,No,No,Yes,Yes,Soy,,Rosa Labs,US,No
+Soylent,Coffiest,"Coffee,Chocolate",$3.25,$3.09,400,400ml,$16.25,400,21,2,2.5,16,,,0,37,9,3,20,0.3,No,No,No,Yes,Yes,Soy,,Rosa Labs,US,No
+Jake,Original,Vanilla,€3.20,€2.49,667,160,€9.60,417,14,1.8,2.9,6.7,1,4.9,,43.8,5,6.2,25,1.1,,No,No,Yes,Yes,Pea,,Jake Nutritionals B.V.,Netherlands,Yes
+Jake,Light,Vanilla,€2.78,€2.11,500,113,€11.12,442,19.6,2.6,4.9,11.2,1,8.8,,27.6,5,6.2,35.4,1.8,,No,No,Yes,Yes,Pea,,Jake Nutritionals B.V.,Netherlands,Yes
+Jake,Sport,Vanilla,€3.45,€2.74,750,170,,441,16.3,6.2,3.1,6.1,0.8,4.5,,47.5,12.2,4.1,23.6,1.2,,No,No,Yes,Yes,Pea,,Jake Nutritionals B.V.,Netherlands,Yes
+Nano,Original v2,,€3.00,€1.33,666,150,€9.01,444,15.5,3.1,2.7,7.7,0.9,4.3,,59.1,1.6,7.3,18,1,,,,,Yes,Pea,,Nano,Netherlands,Yes
+Bertrand,Vegan 2.1,,€4.89,€2.89,706,168,€13.85,420,20.6,2.6,9.3,7.9,2.2,5.2,,49.4,6.2,5.6,12.3,0.5,Yes,Yes,Yes,Yes,Yes,Rice,,Bertrand Food UG,Germany,Yes
+Bertrand,Classic 2.5,,€4.89,€2.89,740,168,€13.22,440,21.4,2,8.3,7.3,2,4.8,,50,6,5.35,11.9,0.5,Yes,Yes,Yes,No,No,Milk,Oat,Bertrand Food UG,Germany,Yes
+Bertrand,Active,,€5.38,€3.21,833,168,€12.92,500,20.8,2.2,7.6,7.2,1.8,4.6,,53,6.2,5.8,25,0.6,Yes,Yes,Yes,No,No,Milk,Oat,Bertrand Food UG,Germany,Yes
+Queal,Standard,,€2.33,€1.95,699,178,€6.67,394,10.4,2.9,3.8,3.5,,,,44.3,4.7,8.1,27.7,,Yes,No,No,No,No,"Soy,Whey",,Queal,Netherlands,Yes
+Nutberg,Standard,Natural,€5.00,€2.45,501,110,€19.96,456,22.7,6.5,,,1.1,5.1,,39.1,4.1,8,26.1,0.03,Yes,No,Yes,Yes,Yes,"Rice,Pea,Hemp",,Nutberg,Czech,Yes
+Ambronite,v5,Natural,€11.00,€7.57,500,118,€44.00,424,16.1,2.5,7.6,5.9,,,0,43.2,12.7,8.5,25.4,0.36,Yes,No,No,Yes,Yes,,,Ambronite,Finland,Yes
